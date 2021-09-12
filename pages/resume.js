@@ -4,11 +4,11 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>Home | RyanDev.io</title>
+				<title>Resume | RyanDev.io</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<h1>Homepage</h1>
+				<h1>Resume</h1>
 			</main>
 		</div>
 	)
