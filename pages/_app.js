@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<div>
 			<header>
-				<nav className="mt-4 mb-10 mx-3">
+				<nav className="mt-4 my-5 mx-3">
 					<ul className="flex flex-row space-x-6">
 						<li className="font-bold mr-5 hover:text-gray-900">
 							<Link className="" href="/">RyanDev.io</Link>
