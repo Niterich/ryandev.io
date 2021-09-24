@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+color scheme 1 - light and energetic
+#5680E9 - dark blue
+#84CEEB - teal
+#5AB9EA - light blue
+#C1C8E4 - light grey
+#8860D0 - purple
+
+color scheme 2 - dark with contrast
+#61892F - dark green
+#86c232 - light green
+#222629 - dark grey
+#474B4F - grey
+#6B6E70 - light grey
+ */
+@layer utilities {
+    body {
+        background-color: #222629;
+    }
+    nav {
+        color: #86c232
+    }
+    #bg-image {
+        background-position: center;
+        background-image: url(../public/images/geometric-circle.png);
+        background-repeat: no-repeat;
+        left: 25%;
+        top: 25%;
+        width: 60vw;
+        height: 600px;
+        position: fixed;
+        background-size: contain;
+        z-index: -99999;
+    }
+}
