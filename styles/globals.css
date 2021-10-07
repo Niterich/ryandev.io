@@ -18,21 +18,47 @@ color scheme 2 - dark with contrast
  */
 @layer utilities {
     body {
-        background-color: #222629;
+        background: #222629;
+        /* background: radial-gradient(circle, rgba(34,38,41,1) 82%, rgba(45,45,46,1) 97%); */
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     nav {
         color: #86c232
     }
     #bg-image {
-        background-position: center;
-        background-image: url(../public/images/geometric-circle.png);
+        background-position: center center;
+        background-image: url(../public/images/geometric-circle-gray.png);
         background-repeat: no-repeat;
+        background-size: contain;
         left: 25%;
         top: 25%;
-        width: 60vw;
-        height: 600px;
+        width: 50%;
+        height: 70%;
         position: fixed;
-        background-size: contain;
         z-index: -99999;
     }
+    #typewriter {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid white; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        animation: 
+          typing 1.5s steps(12, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 21% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: white; }
+      }
 }
